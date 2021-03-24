@@ -4,26 +4,34 @@
 #include<QString>
 #include<QSqlQueryModel>
 
-class Boutique
+
+class boutique
 {
 public:
-    Boutique();
-    Boutique(QString,QString,int);
-    QString get_nom();
-    QString get_ref();
-    int get_nbr();
-    void set_nom(QString);
-    void set_ref(QString);
-    void set_nbr(int);
-     bool ajouter();
-     QSqlQueryModel* afficher();
-     bool supprimer(QString);
-     void modifier(QString,QString,int);
-private:
-     QString nom_produit;
-     QString ref_commande;
-     int nbr_produit;
+    boutique();
+   boutique(QString,QString,QString,int,int);
+   QString get_ID_boutique();
+  QString get_nom_boutique();
+  QString get_adresse();
+  int get_nbr_employees();
+  int get_horaire();
+  void set_ID_boutique(QString);
+  void set_nom_boutique(QString);
+  void set_adresse(QString);
+  void set_nbr_employees(int);
+  void  set_horaire(int);
+   bool ajouter();
+   QSqlQueryModel* afficher();
+    bool supprimer(QString);
+     bool modifier(QString,QString,QString,int,QTime);
 
+
+private:
+    QString ID_boutique;
+   QString nom_boutique;
+   QString adresse;
+   int nbr_employees;
+   int nbr_heure;
 
 };
 

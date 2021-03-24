@@ -17,12 +17,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     boutique.cpp \
+    commande.cpp \
     connection.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     boutique.h \
+    commande.h \
     connection.h \
     mainwindow.h
 
